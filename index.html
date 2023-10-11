@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <title>Cadastro Fornecedor/Produto</title>
+    </head>
+    <div><h1>CADASTRO DE FORNECEDORES/PRODUTO</h1></div>
+    <br />
+    <body>
+        <form>
+            <h3>Dados do Fornecedor</h3>
+            <fieldset>
+                <div>
+                    <label>Razão Social</label>
+                    <input type="text" name="razaosocial" id="razaosocial" />
+                </div>
+
+                <div>
+                    <label>Nome Fantasia</label>
+                    <input type="text" name="nomefantasia" id="nomefantasia" />
+                </div>
+
+                <div>
+                    <label>CEP</label>
+                    <input type="number" name="cep" id="cep" />
+                </div>
+
+                <div>
+                    <label>Endereço</label>
+                    <input type="text" name="endereco" id="endereco" />
+                </div>
+
+                <div>
+                    <label>Complemento</label>
+                    <input type="text" name="complemento" id="complemento" />
+                </div>
+
+                <div>
+                    <label>Bairro</label>
+                    <input type="text" name="bairro" id="bairro" />
+                </div>
+
+                <div>
+                    <label>Município</label>
+                    <input type="text" name="municipio" id="municipio" />
+                </div>
+
+                <div>
+                    <label>Estado</label>
+                    <input type="text" name="estado" id="estado" />
+                </div>
+
+                <div>
+                    <label>Nome da Pessoa de Contato</label>
+                    <input type="text" name="nomecontato" id="nomecontato" />
+                </div>
+
+                <div>
+                    <label>Telefone</label>
+                    <input type="tel" name="fone" id="fone" />
+                </div>
+
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+
+                <div>
+                    <label>CPNJ</label>
+                    <input type="text" name="cnpj" id="cnpj" />
+                </div>
+
+                <div>
+                    <label>Inscrição Estadual</label>
+                    <input
+                        type="text"
+                        name="inscricaoestadual"
+                        id="inscricaoestadual"
+                    />
+                </div>
+
+                <div>
+                    <label>Inscrição Municipal</label>
+                    <input
+                        type="text"
+                        name="inscricaomunicipal"
+                        id="inscricaomunicipal"
+                    />
+                </div>
+
+                <div>
+                    <label>Número</label>
+                    <input type="number" name="numero" id="numero" />
+                </div>
+            </fieldset>
+
+            <h3>Produtos</h3>
+            <fieldset>
+                <h5>Produto - 1</h5>
+                <div>
+                    <label>Produto</label>
+                    <input type="text" name="produto" id="produto" />
+                </div>
+
+                <div>
+                    <label>UND. Medida</label>
+                    <select name="undmedida" id="undmedida">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>QDTDE. em Estoque</label>
+                    <input type="number" name="qtde" id="qtde" />
+                </div>
+
+                <div>
+                    <label>Valor Unitário</label>
+                    <input
+                        type="number"
+                        name="valorunitario"
+                        id="valorunitario"
+                    />
+                </div>
+
+                <div>
+                    <label>Valor Total</label>
+                    <input type="number" name="totalvalor" id="totalvalor" />
+                </div>
+
+                <h5>Produto - 2</h5>
+                <div>
+                    <label>Produto</label>
+                    <input type="text" name="produto" id="produto" />
+                </div>
+
+                <div>
+                    <label>UND. Medida</label>
+                    <input type="undmedida" name="undmedida" id="undmedida" />
+                </div>
+
+                <div>
+                    <label>QDTDE. em Estoque</label>
+                    <select name="undmedida" id="undmedida">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Valor Unitário</label>
+                    <input
+                        type="number"
+                        name="valorunitario"
+                        id="valorunitario"
+                    />
+                </div>
+
+                <div>
+                    <label>Valor Total</label>
+                    <input type="number" name="totalvalor" id="totalvalor" />
+                </div>
+                <div>
+                    <input
+                        class="button"
+                        type="button"
+                        value="Adicionar Produto"
+                    />
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>Anexos</h3>
+                <h5>Itens</h5>
+            </fieldset>
+        </form>
+    </body>
+</html>

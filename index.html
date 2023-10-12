@@ -12,191 +12,455 @@
         />
         <title>Cadastro Fornecedor/Produto</title>
     </head>
-    <div><h1>CADASTRO DE FORNECEDORES/PRODUTO</h1></div>
-    <br />
-    <body>
-        <form>
-            <h3>Dados do Fornecedor</h3>
-            <fieldset>
-                <div>
-                    <label>Razão Social</label>
-                    <input type="text" name="razaosocial" id="razaosocial" />
-                </div>
 
-                <div>
-                    <label>Nome Fantasia</label>
-                    <input type="text" name="nomefantasia" id="nomefantasia" />
+    <body class="container-fluid py-5">
+        <main class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center mb-5">
+                        Cadastro Fornecedor/Produto
+                    </h1>
                 </div>
+                <form class="container">
+                    <div class="row grid gap-3">
+                        <div class="col-12 card px-0">
+                            <div class="card-header bg-primary text-white">
+                                Dados do Fornecedor
+                            </div>
 
-                <div>
-                    <label>CEP</label>
-                    <input type="number" name="cep" id="cep" />
-                </div>
+                            <fieldset class="row p-3">
+                                <div class="mb-3 col-8">
+                                    <label for="razao_social" class="form-label"
+                                        >Razão Social</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="razao_social"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Endereço</label>
-                    <input type="text" name="endereco" id="endereco" />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="cnpj" class="form-label"
+                                        >CNPJ</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="cnpj"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Complemento</label>
-                    <input type="text" name="complemento" id="complemento" />
-                </div>
+                                <div class="mb-3 col-8">
+                                    <label
+                                        for="nome_fantasia"
+                                        class="form-label"
+                                        >Nome Fantasia</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nome_fantasia"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Bairro</label>
-                    <input type="text" name="bairro" id="bairro" />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label
+                                        for="inscricao_estadual"
+                                        class="form-label"
+                                        >Inscrição Estadual</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inscricao_estadual"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Município</label>
-                    <input type="text" name="municipio" id="municipio" />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="cep" class="form-label"
+                                        >CEP</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="cep"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Estado</label>
-                    <input type="text" name="estado" id="estado" />
-                </div>
+                                <div class="mb-3 offset-md-4 col-4">
+                                    <label
+                                        for="inscricao_municipal"
+                                        class="form-label"
+                                        >Inscrição Municipal</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inscricao_municipal"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Nome da Pessoa de Contato</label>
-                    <input type="text" name="nomecontato" id="nomecontato" />
-                </div>
+                                <div class="mb-3 col-8">
+                                    <label for="endereco" class="form-label"
+                                        >Endereço</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="endereco"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Telefone</label>
-                    <input type="tel" name="fone" id="fone" />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="numero" class="form-label"
+                                        >Número</label
+                                    >
+                                    <input
+                                        type="number"
+                                        class="form-control"
+                                        id="numero"
+                                    />
+                                </div>
 
-                <div>
-                    <label>E-mail</label>
-                    <input type="email" name="email" id="email" />
-                </div>
+                                <div class="mb-3 offset-md-0 col-12">
+                                    <label for="complemento" class="form-label"
+                                        >Complemento</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="complemento"
+                                    />
+                                </div>
 
-                <div>
-                    <label>CPNJ</label>
-                    <input type="text" name="cnpj" id="cnpj" />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="bairro" class="form-label"
+                                        >Bairro</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="bairro"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Inscrição Estadual</label>
-                    <input
-                        type="text"
-                        name="inscricaoestadual"
-                        id="inscricaoestadual"
-                    />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="municipio" class="form-label"
+                                        >Município</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="municipio"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Inscrição Municipal</label>
-                    <input
-                        type="text"
-                        name="inscricaomunicipal"
-                        id="inscricaomunicipal"
-                    />
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="estado" class="form-label"
+                                        >Estado</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="estado"
+                                    />
+                                </div>
 
-                <div>
-                    <label>Número</label>
-                    <input type="number" name="numero" id="numero" />
-                </div>
-            </fieldset>
+                                <div class="mb-3 col-5">
+                                    <label for="contato" class="form-label"
+                                        >Nomde da Pessoa de Contato</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="contato"
+                                    />
+                                </div>
 
-            <h3>Produtos</h3>
-            <fieldset>
-                <h5>Produto - 1</h5>
-                <div>
-                    <label>Produto</label>
-                    <input type="text" name="produto" id="produto" />
-                </div>
+                                <div class="mb-3 col-3">
+                                    <label for="telefone" class="form-label"
+                                        >Telefone</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="telefone"
+                                    />
+                                </div>
 
-                <div>
-                    <label>UND. Medida</label>
-                    <select name="undmedida" id="undmedida">
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
-                        <option value="5"></option>
-                        <option value="6"></option>
-                        <option value="7"></option>
-                        <option value="8"></option>
-                        <option value="9"></option>
-                        <option value="10"></option>
-                    </select>
-                </div>
+                                <div class="mb-3 col-4">
+                                    <label for="email" class="form-label"
+                                        >E-mail</label
+                                    >
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="email"
+                                    />
+                                </div>
+                            </fieldset>
+                        </div>
 
-                <div>
-                    <label>QDTDE. em Estoque</label>
-                    <input type="number" name="qtde" id="qtde" />
-                </div>
+                        <div class="col-12 card px-0">
+                            <div class="card-header bg-primary text-white">
+                                Produtos
+                            </div>
 
-                <div>
-                    <label>Valor Unitário</label>
-                    <input
-                        type="number"
-                        name="valorunitario"
-                        id="valorunitario"
-                    />
-                </div>
+                            <ul class="row p-5 gap-4">
+                                <li class="d-flex gap-3 align-items-center">
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        aria-label="Close"
+                                    ></button>
+                                    <div
+                                        class="position-relative border border-1 rounded container p-3"
+                                    >
+                                        <small
+                                            class="position-absolute top-0 translate-middle p-2 bg-white fs-6"
+                                            style="left: 70px"
+                                            >Produto - 1</small
+                                        >
+                                        <div
+                                            class="row justify-content-center align-items-center"
+                                        >
+                                            <figure class="col-2 text-center">
+                                                <img
+                                                    class="w-50"
+                                                    src="product.png"
+                                                    alt=""
+                                                />
+                                            </figure>
 
-                <div>
-                    <label>Valor Total</label>
-                    <input type="number" name="totalvalor" id="totalvalor" />
-                </div>
+                                            <div class="col-10 row">
+                                                <div class="mb-3 col-12">
+                                                    <label
+                                                        for="nome_produto"
+                                                        class="form-label"
+                                                        >Produto</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="nome_produto"
+                                                    />
+                                                </div>
 
-                <h5>Produto - 2</h5>
-                <div>
-                    <label>Produto</label>
-                    <input type="text" name="produto" id="produto" />
-                </div>
+                                                <div class="col-3">
+                                                    <label
+                                                        for="medida_unit"
+                                                        class="form-label"
+                                                        >UND. Medida</label
+                                                    >
+                                                    <input
+                                                        type="number"
+                                                        class="form-control"
+                                                        id="medida_unit"
+                                                    />
+                                                </div>
 
-                <div>
-                    <label>UND. Medida</label>
-                    <input type="undmedida" name="undmedida" id="undmedida" />
-                </div>
+                                                <div class="col-3">
+                                                    <label
+                                                        for="qtde_estoque"
+                                                        class="form-label"
+                                                        >QDTDE. em
+                                                        Estoque</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="qtde_estoque"
+                                                    />
+                                                </div>
 
-                <div>
-                    <label>QDTDE. em Estoque</label>
-                    <select name="undmedida" id="undmedida">
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
-                        <option value="5"></option>
-                        <option value="6"></option>
-                        <option value="7"></option>
-                        <option value="8"></option>
-                        <option value="9"></option>
-                        <option value="10"></option>
-                    </select>
-                </div>
+                                                <div class="col-3">
+                                                    <label
+                                                        for="unit_valor"
+                                                        class="form-label"
+                                                        >Valor Unitário</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="unit_valor"
+                                                    />
+                                                </div>
 
-                <div>
-                    <label>Valor Unitário</label>
-                    <input
-                        type="number"
-                        name="valorunitario"
-                        id="valorunitario"
-                    />
-                </div>
+                                                <div class="col-3">
+                                                    <label
+                                                        for="valor_total"
+                                                        class="form-label"
+                                                        >Valor Total</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="valor_total"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-3 align-items-center">
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        aria-label="Close"
+                                    ></button>
+                                    <div
+                                        class="position-relative border border-1 rounded container p-3"
+                                    >
+                                        <small
+                                            class="position-absolute top-0 translate-middle p-2 bg-white fs-6"
+                                            style="left: 70px"
+                                            >Produto - 2</small
+                                        >
+                                        <div
+                                            class="row justify-content-center align-items-center"
+                                        >
+                                            <figure class="col-2 text-center">
+                                                <img
+                                                    class="w-50"
+                                                    src="product.png"
+                                                    alt=""
+                                                />
+                                            </figure>
 
-                <div>
-                    <label>Valor Total</label>
-                    <input type="number" name="totalvalor" id="totalvalor" />
-                </div>
-                <div>
-                    <input
-                        class="button"
-                        type="button"
-                        value="Adicionar Produto"
-                    />
-                </div>
-            </fieldset>
-            <fieldset>
-                <h3>Anexos</h3>
-                <h5>Itens</h5>
-            </fieldset>
-        </form>
+                                            <div class="col-10 row">
+                                                <div class="mb-3 col-12">
+                                                    <label
+                                                        for="nome_produto"
+                                                        class="form-label"
+                                                        >Produto</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="nome_produto"
+                                                    />
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <label
+                                                        for="medida_unit"
+                                                        class="form-label"
+                                                        >UND. Medida</label
+                                                    >
+                                                    <input
+                                                        type="number"
+                                                        class="form-control"
+                                                        id="medida_unit"
+                                                    />
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <label
+                                                        for="unit_valor"
+                                                        class="form-label"
+                                                        >Valor Unitário</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="unit_valor"
+                                                    />
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <label
+                                                        for="valor_total"
+                                                        class="form-label"
+                                                        >Valor Total</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="valor_total"
+                                                    />
+                                                </div>
+
+                                                <div class="col-3">
+                                                    <label
+                                                        for="nome_produto"
+                                                        class="form-label"
+                                                        >Produto</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="nome_produto"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <button class="btn btn-success m-3" type="button">
+                                Adicionar Produto
+                            </button>
+                        </div>
+
+                        <div class="col-12 card px-0">
+                            <div class="card-header bg-primary text-white">
+                                Anexos
+                            </div>
+
+                            <div class="p-3">
+                                <h5>Itens</h5>
+                                <div class="input-group mb-3 col-12">
+                                    <label
+                                        class="input-group-text"
+                                        for="inputGroupFile01"
+                                        >Upload</label
+                                    >
+                                    <input
+                                        type="file"
+                                        class="form-control"
+                                        id="inputGroupFile01"
+                                    />
+                                </div>
+
+                                <div class="input-group mb-3">
+                                    <label
+                                        class="input-group-text"
+                                        for="inputGroupFile01"
+                                        >Upload</label
+                                    >
+                                    <input
+                                        type="file"
+                                        class="form-control"
+                                        id="inputGroupFile01"
+                                    />
+                                </div>
+
+                                <button
+                                    class="btn btn-success w-100"
+                                    type="button"
+                                >
+                                    Incluir Anexo
+                                </button>
+                            </div>
+                        </div>
+                        <button
+                            class="btn btn-success btn-lg mt-3"
+                            type="button"
+                        >
+                            Salvar Fornecedor
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js"></script>
     </body>
 </html>
